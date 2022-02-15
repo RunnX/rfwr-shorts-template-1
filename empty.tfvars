@@ -1,0 +1,6 @@
+arm_subscription_id = ""
+arm_principal       = ""
+arm_password        = ""
+tenant_id           = ""
+shorts1-rg          = ""
+location            = ""

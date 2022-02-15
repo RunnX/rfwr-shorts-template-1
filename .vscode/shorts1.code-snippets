@@ -1,0 +1,27 @@
+{
+    "Add Service Bus Queue Terraform":{
+        "scope": "terraform",
+        "prefix": "sb",
+        "body": [
+            "resource \"azurerm_servicebus_namespace\" \"shorts1\" {",
+            "  name                = \"rfwr-short1-servicebus-namespace\"",
+            "  location            = azurerm_resource_group.shorts1.location",
+            "  resource_group_name = azurerm_resource_group.shorts1.name",
+            "  sku                 = \"Standard\"",
+            "",
+            "  tags = {",
+            "    source = \"terraform\"",
+            "  }",
+            "}",
+            "",
+            "resource \"azurerm_servicebus_queue\" \"shorts1\" {",
+            "  name                = \"rfwr-short1-servicebus-queue\"",
+            "  namespace_name      = azurerm_servicebus_namespace.shorts1.name",
+            "  resource_group_name = azurerm_resource_group.shorts1.name",
+            "",
+            "  enable_partitioning = true",
+            "}",
+            ""
+        ]
+    }
+}
