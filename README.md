@@ -41,7 +41,7 @@ brew install gh
 
 ### Terraform
 
-[Terraform CLI installtion media](https://learn.hashicorp.com/tutorials/terraform/install-cli) or execute below
+[Terraform CLI installation media](https://learn.hashicorp.com/tutorials/terraform/install-cli) or execute below
 
 Windows
 
@@ -54,6 +54,22 @@ MacOS
 ```bash
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
+```
+
+### Azure CLI
+
+[Azure CLI installation media](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) or execute below
+
+Windows
+
+```powershell
+winget install Microsoft.AzureCLI
+```
+
+MacOS
+
+```bash
+brew install azure-cli
 ```
 
 ### IDE
